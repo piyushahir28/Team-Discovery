@@ -1,2 +1,1 @@
-# Team-Discovery
-A loan management system created by Team Discovery while interning at HC Roots.
+![Hello, Team Discovery 👋 Please push your code asap🚀](https://github.com/matyo91/matyo91/raw/main/assets/github.gif)
