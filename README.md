@@ -1,1 +1,11 @@
-![Hello, Team Discovery 👋 Please push your code asap🚀](https://github.com/matyo91/matyo91/raw/main/assets/github.gif)
+<h1 align="center">Hello 👋, Team</h1>
+
+<p>
+Submit your code ASAP. 
+</p>
+
+#### Steps to submit your code
+
+* Fork this repo
+* Push your code into the forked one
+* Request for a pull in main
