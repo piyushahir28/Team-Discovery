@@ -11,8 +11,8 @@ body{
 }
 nav{
    
-    height: 6rem;
-    width: 100vw;
+    height: 5rem;
+    width: 100%;
     background-color: #131418;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -30,7 +30,7 @@ nav{
     width: 10rem;
     margin-left: 10px;
     margin-right: 30px;
-    margin-top: 20px;
+    margin-top: 10px; 
 }
 
 /*Styling Links*/
@@ -40,10 +40,11 @@ nav{
     width: 88vw;
     /* padding: 0 0.7vw; */
     justify-content: start;
-    align-items: center !important;
+    /* align-items: center !important; */
     word-spacing: 90px;
     font-size: large;
     margin-left: 2px;
+    margin-top: 10px;
  
     /* text-transform: uppercase; */
     
@@ -158,6 +159,7 @@ nav{
         transition: all 1s ease-out;
         pointer-events: none;
         justify-content: space-evenly !important;
+        align-items: center !important; 
     }
   
     .button
@@ -165,11 +167,12 @@ nav{
    flex-direction: column;
     justify-content: space-evenly !important;
      margin-left: 70px ; 
-     
-   
-    
     
   }
+  .join-button{
+   margin-top: 50px;
+}
+
     .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
