@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EMI Calculation</title>
+    <link rel="stylesheet" type="text/css" href="installmentCalculator.css">
+</head>
+
+<body>
+    <!-- HEADER STARTS-->
+    <div class="header">
+        <h4>Loan EMI Calculator</h4>
+        <p>Plan our borrowings and repayments. Calculate your monthly outgo with our loan EMI Calculator.</p>
+    </div>
+    <!--HEADER ENDS-->
+
+    <div id=outer>
+        <div class='heading'>EMI Calculator</div>
+        <div id=cover>
+            <form>
+                <table class=main>
+                    <col class=content>
+                    <col class=content>
+                    <tr>
+                        <td>Loan Amount
+                        <td><input id=loan1>
+                    <tr>
+                        <td>Repayment in months
+                        <td><input id=months1>
+                    <tr>
+                        <td>Interest Rate
+                        <td><input id=rate1 onchange=emi();>
+                    <tr>
+                        <td><button type=reset>Reset</button>
+                        <td><button type=button onclick='emi()'>Submit</button>
+                    <tr>
+                        <td>EMI
+                        <td><input id=pay1>
+                    <tr>
+                        <td>Interest payable
+                        <td><input id=tintt1>
+                    <tr>
+                        <td>Total payable
+                        <td><input id=gt1>
+                </table>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="description">
+        <p>When you take a loan, the equated monthly instalment is a key factor in deciding the loan amount and tenure.
+            The personal loan calculator helps you instantly calculate your pay-outs and, therefore, plan your loan and
+            repayment better.</p>
+
+        <p>To calculate your EMI, just enter the loan amount, rate of interest and loan tenure, and your EMI is
+            instantly displayed. </p>
+
+        <p>If you wish to change the EMI adjust any of the three sliders on the personal loan EMI calculator. If you
+            wish to lower your EMI, you can do so by reducing the loan amount or the interest rate or by increasing the
+            tenure. If you can afford higher monthly payments, you could consider increasing the loan amount or reducing
+            your tenure.</p>
+
+
+
+        <p>The calculator is designed to be easy-to-use and intuitive.</p>
+    </div>
+
+    <script src="installmentCalculator.js"></script>
+</body>
+
+</html>
