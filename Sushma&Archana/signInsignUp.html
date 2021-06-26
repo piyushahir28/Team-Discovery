@@ -57,7 +57,7 @@
 		            				</div>
 		           					<div class="input-field">
 		              					<i class="fas fa-lock"></i>
-		              					<input type="password" placeholder="Password" name="psw" id="psw" required />
+		              					<input type="password" placeholder="Password" name="psw" id="psw" required pattern=".{6,}"   required title="6 characters minimum"/>
 		            				</div>
 		            				<input type="submit" name="login_user" value="Login" class="btns solid" />
 		            				<p class="social-text">New User?<a data-dismiss="modal" data-toggle="modal" href="#mySignUp">Create an Account</a></p>
@@ -90,7 +90,7 @@
 		          			<button type="button" class="close" data-dismiss="modal"> &times; </button>
 		        		</div>
 			      		<div class="modal-body">
-			          		<form action="signup.php" method="post" class="sign-up-form" id="formhai">
+			          		<form action="#" method="post" class="sign-up-form" id="formhai">
 			            		<h2 class="title">Sign Up</h2>
 								<div class="input-field">
 			              			<i class="fas fa-users"></i>
@@ -102,7 +102,7 @@
 			            		</div>
 			            		<div class="input-field">
 			            			<i class="fas fa-phone"></i>
-			            			<input type="phone number" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}"0 >
+			            			<input type="phone number" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}" >
 			           			</div>
 			           			<div class="input-field">
 			            			<i class="fas fa-mail-bulk"></i>
@@ -110,15 +110,15 @@
 			           			</div>
 			           			<div class="input-field">
 			            			<i class="fas fa-birthday-cake"></i>
-			            			<input type='date' id='dateOfBirth' name='dob' value='date of Birth'>
+			            			<input type='date' id='dateOfBirth' name='dob' value='date of Birth' required >
 			           			</div>
 								<div class="input-field">
 			              			<i class="fas fa-id-card"></i>
-			              			<input type="number" placeholder="Aadhar number" name="adrnum" id="adrnum" required />
+			              			<input type="phone number" placeholder="Aadhar number" name="adrnum" id="adrnum" required pattern="[0-9]{12}" />
 			            		</div>
 			           			<div class="input-field">
 			              			<i class="fas fa-lock"></i>
-			              			<input type="password" placeholder="Password" name="psw" id="psw" required />
+			              			<input type="password" placeholder="Password" name="psw" id="psw" required pattern=".{8,}"   required title="8 characters minimum"/>
 			            		</div>
 			            		
 			            		<input type="submit" name="sign_user" value="Sign Up" class="btns solid" />
@@ -145,7 +145,6 @@
 		</div>
 		<br><br>
 		
-		<!--Code to link the JavaScript File-->
-		<script type="text/javascript" src="myscript.js"></script>
+	
 	</body>
 </html>
