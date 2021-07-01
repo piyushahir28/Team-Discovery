@@ -1,0 +1,60 @@
+*{
+    font-family: Century Gothic;
+}
+
+.heading{
+    font-size: 20px;
+}
+.User-name{
+    width: 220px;
+
+}
+.Account-Number{
+    width: 220px;
+}
+
+a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 5px;  
+    border: solid blue; 
+}
+
+a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+th{
+    font-size: 15px;
+}
+
+.textarea{
+    width: 250px;
+    height: 50px;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(28, 161, 88);
+    padding: 8px;
+    margin: 5px;
+    width: 100px;
+}
+
+@media(max-width: 700px){
+    table{
+        width: 350px;
+        height: 550px;
+    }
+    th{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 15px;
+    }
+    .btn{
+        width: 65px;
+        padding: 3px;
+    }
