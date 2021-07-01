@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
+            rel="stylesheet">
+
+        <!-- Custom Styling -->
+        <link rel="stylesheet" href="style1.css">
+
+        <!-- Admin Styling -->
+        <link rel="stylesheet" href="admin.css">
+
+<script type="text/javascript">
+    
+    function update()
+    {
+        var b=confirm("Are You Sure?");
+
+        if(b)
+        {
+            //update details in backend;
+
+        }
+    }
+
+
+</script>
+
+<style type="text/css">
+    table {
+  width: 70%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#back{
+    border:1px solid #929FD1;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #929FD1;
+    color: white;
+}
+#back:hover{
+    background-color: #E7C7D7;
+}
+
+
+input {
+  padding: .7rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  color: #444;
+  line-height: 1rem;
+  font-size: 10px;
+  font-family: 'Lora', serif;
+}
+
+</style>
+
+        <title>User details</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-text"><span>HC ROOTS</span>BANK</h1>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        Admin
+                        <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#" class="logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Admin Page Wrapper -->
+        <div class="admin-wrapper">
+
+            <!-- Left Sidebar -->
+            <div class="left-sidebar">
+                <ul>
+                    <!--<li><a href="../posts/index.html">Manage Posts</a></li>-->
+                    <li><a href="admin.html">Users</a></li>
+                    <!--<li><a href="../topics/index.html">Manage Topics</a></li>-->
+                </ul>
+            </div>
+            <!-- // Left Sidebar -->
+
+
+            <!-- Admin Content -->
+            <div class="admin-content">
+                <div class="button-group">
+                    
+                </div>
+
+
+                <div class="content">
+
+                    <h2 class="page-title" style="color: black;"> Details </h2>
+                    <center>
+                    <table>
+                        <tr>
+                                <td>Name</td>
+                                <td> <input type="text" name="name"> </td>
+                                <td> <input type="submit" name="submit" value="Update" id="back" onclick="update()"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>User Name</td>
+                                <td> <input type="text" name="uname"> </td>
+                                <td> <input type="submit" name="submit" value="Update" id="back" onclick="update()"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td> <input type="text" name="email"> </td>
+                                <td> <input type="submit" name="submit" value="Update" id="back" onclick="update()"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Date of Birth</td>
+                                <td> <input type="text" name="dob"> </td>
+                                <td> <input type="submit" name="submit" value="Update" id="back" onclick="update()"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Contact</td>
+                                <td> <input type="text" name="name"> </td>
+                                <td> <input type="submit" name="submit" value="Update" id="back" onclick="update()"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Aadhar Number</td>
+                                <td> <input type="text" name="aadhar"> </td>
+                                <td> <input type="submit" name="submit" value="Update" id="back" onclick="update()"></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Account Number</td>
+                                <td> <input type="text" name="acc"> </td>
+                                <td> <input type="submit" name="submit" value="Update" id="back" onclick="update()"></td>
+                                
+                            </tr>
+                    </table>
+                </center>
+                </div>
+                <center><div style="font-size: 25px; padding-top: 40px;"> 
+                    <a href="admin.html" id="back"> Back </a>
+                </div></center>
+            </div>
+            <!-- // Admin Content -->
+
+        </div>
+        <!-- // Page Wrapper -->
+
+        
+
+        <!-- JQuery -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Custom Script -->
+        <script src="scripts.js"></script>
+
+    </body>
+
+</html>
