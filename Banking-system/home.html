@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Patua+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/css.css" />
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--The given link is for Social Media Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <div class="abc">
+        <nav>
+            <div class="logo">
+                <img src="https://finalmonsoon.files.wordpress.com/2019/10/linkedin-logo.jpg?w=801&h=276&crop=1" alt="Logo Image" />
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services </a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact </a></li>
+                <style>
+                    .fade:not(.show) {
+                        opacity: 20;
+                    }
+                </style>
+
+                <ul class="butto">
+                    <li><button class="login-button" href="#mySignIn" data-toggle="modal">sign in</button></li>
+                    <li><button class="join-button" href="#mySignUp" data-toggle="modal">sign up</button></li>
+
+                </ul>
+            </ul>
+        </nav>
+    </div>
+    <!--Here is the code for Sign-In Form(It open in a modal window which was created usin Bootstrap)-->
+    <div class="modal" id="mySignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="sign-in-form" id="formhai">
+                        <h2 class="title">Login</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" name="uname" id="uname" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="psw" id="psw" required />
+                        </div>
+                        <input type="submit" name="login_user" value="Login" class="btns solid" />
+                        <p class="social-text">New User?<a data-dismiss="modal" data-toggle="modal" href="#mySignUp">Create an Account</a></p>
+                        <p class="social-text">Or Sign in with social platforms</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Here is the code for Sign-Up Form(It open in a modal window which was created usin Bootstrap)-->
+    <div class="modal" id="mySignUp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body">
+                    <form action="signup.php" method="post" class="sign-up-form" id="formhai">
+                        <h2 class="title">Sign Up</h2>
+                        <div class="input-field">
+                            <i class="fas fa-users"></i>
+                            <input type="text" placeholder="Name" name="name" id="name" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" name="uname" id="uname" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-phone"></i>
+                            <input type="phone number" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}" 0>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-mail-bulk"></i>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-birthday-cake"></i>
+                            <input type='date' id='dateOfBirth' name='dob' value='date of Birth'>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-id-card"></i>
+                            <input type="number" placeholder="Aadhar number" name="adrnum" id="adrnum" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="psw" id="psw" required />
+                        </div>
+
+                        <input type="submit" name="sign_user" value="Sign Up" class="btns solid" />
+                        <p class="social-text">Already have an Account?<a data-dismiss="modal" data-toggle="modal" href="#mySignIn">Login</a></p>
+                        <p class="social-text">Or Sign-up with social platforms</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <script src="js/Navbar.js"></script>
+
+    <div class="background1">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/pic1.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/pic2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/pic3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+
+    <div class="container" id="services">
+
+        <div class="text-box">
+            <h1>SERVICES</h1>
+            <h1>SERVICES</h1>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="box" style="background-color:#9AD3CA">
+            <h4> PERSONAL</h4>
+            <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet sodales tellus. Fusce eu leo suscipit, finibus arcu euismod, pretium neque. Morbi mattis massa tellus, sit amet finibus diam fringilla in. </style><br><a href="installmentCalculator.html"
+                    class="button">Link Button</a></p>
+        </div>
+        <div class="box" style="background-color:lightblue">
+            <h4>BUSINESS</h4>
+            <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet sodales tellus. Fusce eu leo suscipit, finibus arcu euismod, pretium neque. Morbi mattis massa tellus, sit amet finibus diam fringilla in. </style><br><a href="installmentCalculator.html"
+                    class="button">Link Button</a></p>
+        </div>
+        <div class="box" style="background-color:#D7EAE4">
+            <h4> EDUCATION </h4>
+            <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet sodales tellus. Fusce eu leo suscipit, finibus arcu euismod, pretium neque. Morbi mattis massa tellus, sit amet finibus diam fringilla in. </style> <br><a href="installmentCalculator.html"
+                    class="button">Link Button</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="text-box">
+            <h1>FEEDBACK</h1>
+            <h1>FEEDBACK</h1>
+        </div>
+    </div>
+
+    <div class="background" style="background-color:#E7C7D7;">
+        <div class="container2">
+            <div class="testiSlide">
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <div class="btn"></div>
+                        </blockquote>
+                        <img src="img/user.jpg" alt="PERSON 1" />
+                        <div class="peopl">
+                            <h3>USER 1</h3>
+                            <p class="indentity">CEO</p>
+                        </div>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <div class="btn"></div>
+                        </blockquote>
+                        <img src="img/user.jpg" alt="PERSON 2" />
+                        <div class="peopl">
+                            <h3>USER 2</h3>
+                            <p class="indentity">Web Developer</p>
+                        </div>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <div class="btn"></div>
+                        </blockquote>
+                        <img src="img/user.jpg" alt="PERSON 3" />
+                        <div class="peopl">
+                            <h3>USER 3</h3>
+                            <p class="indentity">Blogger</p>
+                        </div>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            <div class="btn"></div>
+                        </blockquote>
+                        <img src="img/user.jpg" alt="PERSON 4" />
+                        <div class="peopl">
+                            <h3>USER 4</h3>
+                            <p class="indentity">Graphic Designer</p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </style>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+
+    <script src="js/function.js"></script>
+
+    <div class="about-section" id="about" style="background-color:#c3aad1; ">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
+    </div>
+
+    <div class="containe" id="contact">
+        <div class="innerwrap">
+
+            <section class="section1 clearfix">
+                <div class="textcenter">
+                    <span class="shtext">Contact Us</span>
+                    <span class="seperator"></span>
+                    <h1>Drop Us a Mail</h1>
+                </div>
+            </section>
+
+            <section class="section2 clearfix">
+                <div class="col2 column1 first">
+                    <div class="sec2map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.116099006!2d72.74109925453989!3d19.082197839051503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1624464152717!5m2!1sen!2sin"
+                            width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" frameborder="0"></iframe></div>
+
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+                    </style>
+
+
+                </div>
+                <div class="col2 column2 last">
+                    <div class="sec2innercont">
+                        <div class="sec2addr">
+                            <p>45 BC, a Latin professor at Hampden-Sydney College in Virginia</p>
+                            <p><span class="collig">Phone :</span> +91 976885083</p>
+                            <p><span class="collig">Email :</span> vivek.mengu016@gmail.com</p>
+                            <p><span class="collig">Fax :</span> +91 9768850839</p>
+                        </div>
+                    </div>
+                    <div class="sec2contactform">
+                        <form id="contact" action="process.php" method="POST">
+                            <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+                            <div class="clearfix">
+                                <input class="col2 first" type="text" name="firstname" id="firstname" pattern="[A-Za-z ]{1,32}" placeholder="First Name" required>
+
+                                <input class="col2 last" type="text" name="lastname" id="lastname" pattern="[A-Za-z]{1,32}" placeholder="Last Name" required>
+
+                            </div>
+                            <div class="clearfix">
+                                <input class="col2 first" type="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" required>
+
+                                <input class="col2 last" type="text" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Contact Number" required>
+                            </div>
+                            <div class="clearfix">
+                                <textarea name="message" id="message" cols="30" rows="7" required placeholder="Your message here..."></textarea>
+
+                            </div>
+                            <div class="clearfix"><input type="submit" value="Send"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Bank Name</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#mySignUp">Sign Up</a></li>
+                            <li><a href="#mySignIn">Sign in</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item text1 ">
+                        <h3>Address</h3>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content<br> Call Us : +1(847) 719-5900<br> Email Us: info@gmail.com
+                        </p>
+
+
+
+                    </div>
+
+
+                    <div class="col-sm-6 col-md-5 item text1 ">
+                        <h3> About Company </h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="col item social">
+                        <a href="#"> <i class="fab fa-instagram"></i> </a>
+                        <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+
+                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                        <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                    </div>
+                </div>
+                <p class="copyright">Company Name ©</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

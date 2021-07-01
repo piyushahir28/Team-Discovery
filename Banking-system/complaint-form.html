@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>customer complaint form</title>
+    <link rel="stylesheet" type="text/css" href="css/complaint-form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <!-----    Complaint Form     ------>
+
+    <form onsubmit="return myfun()">
+        <table border="solid" height="700px" width="60%" align="center">
+
+
+            <!---  Row 0 --->
+            <tr bgcolor="purple">
+                <th class="heading" colspan="2" style="color: white;"> BANK NAME - CUSTOMER COMPLAINT FORM </th>
+            </tr>
+
+
+            <!--- Row 1 --->
+            <tr>
+                <th colspan="2">
+                    <a href="">Click here to check complaint status</a>
+                </th>
+            </tr>
+
+            <!---  Row 2 --->
+            <tr>
+                <th>Name of User:</th>
+                <th> <input class="User-name" type="text" placeholder="Enter you Name As per The Bank" pattern="[A-Za-z ]{1,32}" required> </th>
+            </tr>
+
+            <!---  Row 3 --->
+            <tr>
+                <th>Account Number:</th>
+                <th> <input class="Account-Number" type="text" placeholder="Enter your Bank Account Number" required> </th>
+            </tr>
+
+            <!---  Row 4 --->
+            <tr>
+                <th>Loan Type:</th>
+                <th> <select required>
+                 <option value="Business Loan">Business Loan</option>
+                    <option value="Home Loan">Home Loan</option>
+                    <option value="Personal Loan">Personal Loan</option>
+                    <option value="Car Loan">Car Loan</option>
+                    <option value="Student Loan">Student Loan</option>
+                    <option value="Credit Card Loan">Credit Card Loan</option>
+                    <option value="Two-wheeler Loan">Two-wheeler Loan</option>
+                    <option value="Agriculture Loan">Agriculture Loan</option>
+                    <option value="Gold Loan">Gold Loan</option>
+                 </select>
+                </th>
+            </tr>
+
+            <!---  Row 5 --->
+            <tr>
+                <th>Mobile Number:</th>
+                <th> <input type="text" minlength="10" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required> </th>
+            </tr>
+
+            <!---  Row 6 --->
+            <div>
+                <tr>
+                    <th>E-mail:</th>
+                    <th> <input type="Email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"> </th>
+                </tr>
+            </div>
+
+
+            <!---  Row 7 --->
+            <tr>
+                <th>Please Give brief details of your complaint:</th>
+                <th> <textarea class="textarea" required maxlength="600"></textarea> </th>
+            </tr>
+
+            <!---  Row 8 --->
+            <tr>
+                <th colspan="2">
+                    <input class="btn" type="submit" onclick='Javascript:checkEmail();' />
+                    <input class="btn" type="reset">
+                </th>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>

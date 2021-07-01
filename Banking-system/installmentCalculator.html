@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EMI Calculation</title>
+    <link rel="stylesheet" type="text/css" href="css/installmentCalculator.css">
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/css.css" />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--The given link is for Social Media Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="abc">
+
+        <nav>
+            <div class="logo" style=" height: 3rem;
+            width: 10rem;
+            margin-left: 10px;
+            margin-right: 30px;
+              padding: 1vh 1vw;
+    text-align: center;">
+                <img src="https://finalmonsoon.files.wordpress.com/2019/10/linkedin-logo.jpg?w=801&h=276&crop=1" alt="Logo Image" />
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links" style="
+            margin-top: -50px;
+            ">
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html">Services </a></li>
+                <li><a href="home.html">About</a></li>
+                <li><a href="home.html">Contact </a></li>
+                <style>
+                    .fade:not(.show) {
+                        opacity: 20;
+                    }
+                </style>
+
+                <ul class="butto">
+                    <li><button class="login-button" href="#mySignIn" data-toggle="modal">sign in</button></li>
+                    <li><button class="join-button" href="#mySignUp" data-toggle="modal">sign up</button></li>
+
+                </ul>
+            </ul>
+        </nav>
+    </div>
+    <!--Here is the code for Sign-In Form(It open in a modal window which was created usin Bootstrap)-->
+    <div class="modal" id="mySignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="sign-in-form" id="formhai">
+                        <h2 class="title">Login</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" name="uname" id="uname" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="psw" id="psw" required />
+                        </div>
+                        <input type="submit" name="login_user" value="Login" class="btns solid" />
+                        <p class="social-text">New User?<a data-dismiss="modal" data-toggle="modal" href="#mySignUp">Create an Account</a></p>
+                        <p class="social-text">Or Sign in with social platforms</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Here is the code for Sign-Up Form(It open in a modal window which was created usin Bootstrap)-->
+    <div class="modal" id="mySignUp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body">
+                    <form action="signup.php" method="post" class="sign-up-form" id="formhai">
+                        <h2 class="title">Sign Up</h2>
+                        <div class="input-field">
+                            <i class="fas fa-users"></i>
+                            <input type="text" placeholder="Name" name="name" id="name" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" name="uname" id="uname" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-phone"></i>
+                            <input type="phone number" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}" 0>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-mail-bulk"></i>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-birthday-cake"></i>
+                            <input type='date' id='dateOfBirth' name='dob' value='date of Birth'>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-id-card"></i>
+                            <input type="number" placeholder="Aadhar number" name="adrnum" id="adrnum" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="psw" id="psw" required />
+                        </div>
+
+                        <input type="submit" name="sign_user" value="Sign Up" class="btns solid" />
+                        <p class="social-text">Already have an Account?<a data-dismiss="modal" data-toggle="modal" href="#mySignIn">Login</a></p>
+                        <p class="social-text">Or Sign-up with social platforms</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <script src="js/Navbar.js"></script>
+
+    <!-- HEADER STARTS-->
+    <div class="header">
+        <h4>Loan EMI Calculator</h4>
+        <p>Plan our borrowings and repayments. Calculate your monthly outgo with our loan EMI Calculator.</p>
+    </div>
+    <!--HEADER ENDS-->
+
+    <div id=outer>
+        <div class='heading'>EMI Calculator</div>
+        <div id=cover>
+            <form>
+                <table class=main>
+                    <col class=content>
+                    <col class=content>
+                    <tr>
+                        <td>Loan Amount
+                            <td><input id=loan1>
+                                <tr>
+                                    <td>Repayment in months
+                                        <td><select id=months1>
+                            <option>--Select months--</option>
+                            <option>3 months </option>
+                            <option>4 months</option>
+                            <option>6 months</option>
+                            <option>12 months</option>
+
+                        </select>
+                                            <tr>
+                                                <td>Interest Rate
+                                                    <td><input id=rate1 onchange=emi(); readonly />
+                                                        <tr>
+                                                            <td><button type=reset>Reset</button>
+                                                                <td><button type=button onclick='emi()'>Submit</button>
+                                                                    <tr>
+                                                                        <td>EMI
+                                                                            <td><input id=pay1>
+                                                                                <tr>
+                                                                                    <td>Interest payable
+                                                                                        <td><input id=tintt1>
+                                                                                            <tr>
+                                                                                                <td>Total payable
+                                                                                                    <td><input id=gt1>
+
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="loan">
+
+        <a href="index.html" style="font-weight:bold;font-size:large; text-decoration: none;
+        color: #000;">Apply for Loan</a>
+    </div>
+    <div class="description">
+        <p>When you take a loan, the equated monthly instalment is a key factor in deciding the loan amount and tenure. The personal loan calculator helps you instantly calculate your pay-outs and, therefore, plan your loan and repayment better.</p>
+
+        <p>To calculate your EMI, just enter the loan amount, rate of interest and loan tenure, and your EMI is instantly displayed. </p>
+
+        <p>If you wish to change the EMI adjust any of the three sliders on the personal loan EMI calculator. If you wish to lower your EMI, you can do so by reducing the loan amount or the interest rate or by increasing the tenure. If you can afford higher
+            monthly payments, you could consider increasing the loan amount or reducing your tenure.</p>
+
+
+
+        <p>The calculator is designed to be easy-to-use and intuitive.</p>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Bank Name</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="home.html">About</a></li>
+                            <li><a href="home.html">Services</a></li>
+                            <li><a href="home.html">Contact</a></li>
+                            <li><a href="#mySignUp">Sign Up</a></li>
+                            <li><a href="#mySignIn">Sign in</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item text1 ">
+                        <h3>Address</h3>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content<br> Call Us : +1(847) 719-5900<br> Email Us: info@gmail.com
+                        </p>
+
+
+
+                    </div>
+
+
+                    <div class="col-sm-6 col-md-5 item text1 ">
+                        <h3> About Company </h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="col item social">
+                        <a href="#"> <i class="fab fa-instagram"></i> </a>
+                        <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+
+                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                        <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                    </div>
+                </div>
+                <p class="copyright">Company Name ©</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/installmentCalculator.js"></script>
+</body>
+
+</html>
