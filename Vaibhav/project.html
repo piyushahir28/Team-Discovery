@@ -1,0 +1,389 @@
+<html>
+    <head>
+
+        <title>project</title>
+        <link rel="stylesheet" href="project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body >
+    <div class = 'nav'>
+            <a class= 'manager'><b>Manager</b></a>
+            <a> <img class= 'image'src="project.png" alt=""></a>
+            <a id="manager-name">Praveen Kumar</a>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"><div class="dic"></div>
+                <div class="dic"></div>
+                <div class="dic"></div></button>
+              <div id="myDropdown" class="dropdown-content" >
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#LogOut">LogOut</a>
+              </div>
+            </div>
+          <div class="search-container">
+                <form>
+                  <input type="text" placeholder="Search.." name="search" >
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+          </div>
+          <select class = 'Loan'>
+            <option value="Loan Type" selected disabled hidden>Loan Type</option>
+            <option value="Business Loan">Business Loan</option>
+            <option value="Crop Loan">Crop Loan</option>
+            <option value="Home Loan">Home Loan</option>
+            <option value="Personal Loan">Personal Loan</option>
+            <option value="Credit Card Loan">Credit Card Loan</option>
+            <option value="Car Loan">Car Loan</option>
+            <option value="Gold Loan">Gold Loan</option>
+            <option value="Education Loan">Education Loan</option>
+          </select>
+    </div>  
+    <div class="seconddiv">
+      
+      <button id="progress" class="one" style="float: left;" type="button">InProgress</button>
+      <button id="progress"class='two' style=" padding-left: 35px;" type="button" onclick='my()'>Aprroved</button>
+      <hr  />
+    </div> 
+    <div class="nam">
+      <ul>
+        <li><a><b>Name</b></a></li>
+        <li><a><b>Loan Type</b></a></li>
+        <li><a><b>Date</b></a></li>
+        <li><a><b>Contact Number</b></a></li>
+        <li><a><b>Status</b></a></li>
+      </ul>
+    </div>
+    <div class="ex4" style="width: 100%; height: 80%;  overflow-y: scroll;">
+        <div class='detail'>
+          <ul>
+            <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+            <li class='li'><a class="name">User1</a></li>
+            <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+            <li class="li"><a class="Date">06 March 2015</a></li>
+            <li class="li"><a class="ContactNumber">9856743218</a></li>
+            <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+            <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+          </ul>
+       </div>
+       <div class='detail'>
+        <ul>
+          <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+          <li class='li'><a class="name">User1</a></li>
+          <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+          <li class="li"><a class="Date">06 March 2015</a></li>
+          <li class="li"><a class="ContactNumber">9856743218</a></li>
+          <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+          <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+        </ul>
+     </div>
+     <div class='detail'>
+      <ul>
+        <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+        <li class='li'><a class="name">User1</a></li>
+        <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+        <li class="li"><a class="Date">06 March 2015</a></li>
+        <li class="li"><a class="ContactNumber">9856743218</a></li>
+        <li class="li"><a class="Status"  name= 'Mi' > Not Verifed</a></li>
+        <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+      </ul>
+   </div>
+   <div class='detail'>
+    <ul>
+      <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+      <li class='li'><a class="name">User1</a></li>
+      <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+      <li class="li"><a class="Date">06 March 2015</a></li>
+      <li class="li"><a class="ContactNumber">9856743218</a></li>
+      <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+      <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+    </ul>
+ </div>
+ <div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+
+
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+<div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Not Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve" name='Mk'>Approve</button></li>
+  </ul>
+</div>
+</div>
+<!--  -->
+<!--  -->
+<!--  -->
+<div class="ex3 nine" style="width: 100%; height: 80%;  overflow-y: scroll;">
+  <div class='detail'>
+    <ul>
+      <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+      <li class='li'><a class="name">User1</a></li>
+      <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+      <li class="li"><a class="Date">06 March 2015</a></li>
+      <li class="li"><a class="ContactNumber">9856743218</a></li>
+      <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+      <li class="li"><button type="button"  class="Approve1" disabled>Approved</button></li>
+    </ul>
+ </div>
+ <div class='detail'>
+  <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"   >Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve1" disabled>Approved</button></li>
+  </ul>
+</div>
+
+<div class='detail'>
+<ul>
+<li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+<li class='li'><a class="name">User1</a></li>
+<li class="li"><a class= 'LoanType'>Business Loan</a></li>
+<li class="li"><a class="Date">06 March 2015</a></li>
+<li class="li"><a class="ContactNumber">9856743218</a></li>
+<li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+<li class="li"><button type="button"  class="Approve1" disabled>Approved</button></li>
+</ul>
+</div>
+<div class='detail'>
+<ul>
+<li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+<li class='li'><a class="name">User1</a></li>
+<li class="li"><a class= 'LoanType'>Business Loan</a></li>
+<li class="li"><a class="Date">06 March 2015</a></li>
+<li class="li"><a class="ContactNumber">9856743218</a></li>
+<li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+<li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+</ul>
+</div>
+<div class='detail'>
+  <ul>
+  <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+  <li class='li'><a class="name">User1</a></li>
+  <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+  <li class="li"><a class="Date">06 March 2015</a></li>
+  <li class="li"><a class="ContactNumber">9856743218</a></li>
+  <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+  <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+  </ul>
+  </div>
+  <div class='detail'>
+    <ul>
+    <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+    <li class='li'><a class="name">User1</a></li>
+    <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+    <li class="li"><a class="Date">06 March 2015</a></li>
+    <li class="li"><a class="ContactNumber">9856743218</a></li>
+    <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+    <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+    </ul>
+    </div>
+    <div class='detail'>
+      <ul>
+      <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+      <li class='li'><a class="name">User1</a></li>
+      <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+      <li class="li"><a class="Date">06 March 2015</a></li>
+      <li class="li"><a class="ContactNumber">9856743218</a></li>
+      <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+      <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+      </ul>
+      </div>
+      <div class='detail'>
+        <ul>
+        <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+        <li class='li'><a class="name">User1</a></li>
+        <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+        <li class="li"><a class="Date">06 March 2015</a></li>
+        <li class="li"><a class="ContactNumber">9856743218</a></li>
+        <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+        <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+        </ul>
+        </div>
+        <div class='detail'>
+          <ul>
+          <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+          <li class='li'><a class="name">User1</a></li>
+          <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+          <li class="li"><a class="Date">06 March 2015</a></li>
+          <li class="li"><a class="ContactNumber">9856743218</a></li>
+          <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+          <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+          </ul>
+          </div>
+          <div class='detail'>
+            <ul>
+            <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+            <li class='li'><a class="name">User1</a></li>
+            <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+            <li class="li"><a class="Date">06 March 2015</a></li>
+            <li class="li"><a class="ContactNumber">9856743218</a></li>
+            <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+            <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+            </ul>
+            </div>
+            <div class='detail'>
+              <ul>
+              <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+              <li class='li'><a class="name">User1</a></li>
+              <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+              <li class="li"><a class="Date">06 March 2015</a></li>
+              <li class="li"><a class="ContactNumber">9856743218</a></li>
+              <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+              <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+              </ul>
+              </div>
+              <div class='detail'>
+                <ul>
+                <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+                <li class='li'><a class="name">User1</a></li>
+                <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+                <li class="li"><a class="Date">06 March 2015</a></li>
+                <li class="li"><a class="ContactNumber">9856743218</a></li>
+                <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+                <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+                </ul>
+                </div>
+                <div class='detail'>
+                  <ul>
+                  <li class= 'li'><img src="project.png"  class= 'userlogo' alt=""></li>
+                  <li class='li'><a class="name">User1</a></li>
+                  <li class="li"><a class= 'LoanType'>Business Loan</a></li>
+                  <li class="li"><a class="Date">06 March 2015</a></li>
+                  <li class="li"><a class="ContactNumber">9856743218</a></li>
+                  <li class="li"><a class="Status"  name= 'Mi' >Verifed</a></li>
+                  <li class="li"><button type="button"  class="Approve1" disabled >Approved</button></li>
+                  </ul>
+                  </div>
+
+</div>
+    </body>
+    <script src="project.js"></script>
+</html>
