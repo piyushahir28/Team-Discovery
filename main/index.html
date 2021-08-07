@@ -43,6 +43,110 @@
         </div>
     </nav>
 
+
+    <!--Here is the code for Sign-In Form(It open in a modal window which was created usin Bootstrap)-->
+    <div class="modal" id="mySignIn">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body">
+                    <form action="signin.php" method="post" class="sign-in-form" id="formhai">
+                        <h2 class="title">Sign in</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" name="uname" id="uname" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="psw" id="psw" required />
+                        </div>
+                        <input type="submit" name="login_user" value="Login" class="btns solid" />
+                        <p class="social-text">New User?<a data-dismiss="modal" data-toggle="modal" href="#mySignUp">Create an Account</a></p>
+                        <p class="social-text">Or Sign in with social platforms</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Here is the code for Sign-Up Form(It open in a modal window which was created usin Bootstrap)-->
+    <div class="modal" id="mySignUp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body">
+                    <form action="signup.php" method="post" class="sign-up-form" id="formhai">
+                        <h2 class="title">Sign Up</h2>
+                        <div class="input-field">
+                            <i class="fas fa-users"></i>
+                            <input type="text" placeholder="Name" name="name" id="name" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" name="uname" id="uname" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-phone"></i>
+                            <input type="phone number" id="number" name="number" placeholder="Contact Number" required pattern="[0-9]{10}" 0>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-mail-bulk"></i>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-birthday-cake"></i>
+                            <input type='date' id='dateOfBirth' name='dob' value='date of Birth'>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-id-card"></i>
+                            <input type="number" placeholder="Aadhar number" name="adrnum" id="adrnum" required />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="psw" id="psw" required />
+                        </div>
+
+                        <input type="submit" name="sign_user" value="Sign Up" class="btns solid" />
+                        <p class="social-text">Already have an Account?<a data-dismiss="modal" data-toggle="modal" href="#mySignIn">Login</a></p>
+                        <p class="social-text">Or Sign-up with social platforms</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -67,6 +171,18 @@
         </a>
     </div>
 
+
+    <div class="row text-center aboutuss">
+        <div class="col-sm-12 col-md-12 col-md-12">
+            <h2>Who we are</h2>
+            <h2 style="font-size: 60px;line-height: 60px;margin-bottom: 20px;font-weight: 900;">About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus etnetus.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.
+            </p>
+        </div>
+    </div>
+
+
     <div class="container bootstrap snippets bootdey">
         <section id="services" class="current">
             <div class="services-top">
@@ -75,7 +191,7 @@
                         <div class="col-sm-12 col-md-12 col-md-12">
                             <h2>What We Offer</h2>
                             <h2 style="font-size: 60px;line-height: 60px;margin-bottom: 20px;font-weight: 900;">Our Services</h2>
-                            <p>Our <span class="highlight">Bank</span> will offer the give <span class="highlight"> Loans.</span></p>
+                            <p>Our <span class="highlight">Bank</span> will offer the given <span class="highlight"> Loans.</span></p>
                         </div>
                     </div>
                     <div class="row">
@@ -158,28 +274,9 @@
         </div>
     </div>
 
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <!-- Left and right controls -->
+    <section id="Sharings">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
-            </div>
-            <div class="item">
-                <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
-            </div>
-            <div class="item">
-                <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -188,8 +285,180 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial-inner">
+                <div id="rowsd" class="row">
+                    <div id="colsd" class="col">
+                        <div class="testimonial">
+                            <img src="https://media-exp1.licdn.com/dms/image/C5603AQEBJB4knkXFXg/profile-displayphoto-shrink_200_200/0/1622394063784?e=1633564800&v=beta&t=Zr7kc4UD_DESKxjpAPDhg5SZ2EbKn9amDyNFkMoj3u0" alt="">
+                            <div id="names" class="name">Archna Bisht</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                            </p>
+                        </div>
+                    </div>
 
+                    <div id="colsd" class="col">
+                        <div class="testimonial">
+                            <img src="https://avatars.githubusercontent.com/u/68782156?v=4" alt="">
+                            <div id="names" class="name">Naveen Gali</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+                        </div>
+                    </div>
+
+                    <div id="colsd" class="col">
+                        <div class="testimonial">
+                            <img src="https://avatars.githubusercontent.com/u/66289022?v=4" alt="">
+                            <div id="names" class="name">
+                                Rutuja Deshmukh</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Here the code of Contact US (Bat karo Humse)-->
+    <section style="margin: 3rem;" id="ContactUs">
+        <div style="margin-top: 2.5rem;" class="row text-center">
+            <div class="col-sm-12 col-md-12 col-md-12">
+                <h2>Where we are</h2>
+                <h2 style="font-size: 60px;line-height: 60px;margin-bottom: 20px;font-weight: 900;">Contact US</h2>
+                <p>Want to Know More?? Drop Us a Mail</p>
+            </div>
+        </div>
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+
+        <div class="row">
+            <div class="col-md-5 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>HC Roots</p>
+                    </li>
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+91 82258-63117</p>
+                    </li>
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>info@hcroots.org</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" onsubmit='return validateForm(this)' method="POST">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" name="name" id="name" required class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="email" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="number" name="number" required pattern="[0-9]{10}" class="form-control">
+                                <label for="subject" class="">Your Contact Number</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea id='message' name='message' desciption='message' rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center text-md-left">
+                        <a href="#mySignIn" data-toggle="modal" class="nav-link"><input type="submit" value="Send" class="btns solid" /></a>
+                    </div>
+                </form>
+                <div class="status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Here is the Footer Code design using pure Bootstrap by piyushonweb-->
+    <footer style="background-color: #333A40; bottom: 0; width: 100%; margin-top: 0px;">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 text-center text-md-left ">
+
+                    <div class="py-0">
+                        <h3 class="my-4 text-white">About<span class="mx-2">HC Roots</span></h3>
+
+                        <p class="footer-links font-weight-bold">
+                            <a class="text-white" href="#">Home</a> |
+                            <a class="text-white" href="#Packages">Services</a> |
+                            <a class="text-white" href="#AboutUS">About</a> |
+                            <a class="text-white" href="#ContactUs">Contact</a>
+                        </p>
+                        <p class="text-light py-4 mb-4">&copy;2020 HC Roots All Rights Reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-white text-center text-md-left ">
+                    <div class="py-2 my-4">
+                        <div>
+                            <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i> HC Roots</p>
+                        </div>
+
+                        <div>
+                            <p><i class="fa fa-phone  mx-2 "></i> +91 82258-63117</p>
+                        </div>
+                        <div>
+                            <p><i class="fas fa-envelope  mx-2"></i><a href="mailto:support@ujjaintourism.com">info@hcroots.org</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-white my-4 text-center text-md-left ">
+                    <span class=" font-weight-bold ">About Hc Roots</span>
+                    <p class=" my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                    <div class="py-2">
+                        <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                        <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                        <a href="#" title="To Top">
+                            <span class="fa fa-angle-double-up"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./app.js"></script>
 </body>
